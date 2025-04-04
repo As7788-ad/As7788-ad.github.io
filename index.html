@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سحر الأنوثة - جمالك بأناقة ورقي</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- الهيدر -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>سحر الأنوثة</h1>
+                <p>جمالكِ بأناقة ورقي!</p>
+            </div>
+            
+            
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="ابحثي عن منتجاتك المفضلة...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+                <div class="search-suggestions"></div>
+            </div>
+            
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">الرئيسية </a></li>
+                    <li><a href="shop.html">المتجر</a></li>
+                    <li><a href="deals.html">العروض</a></li>
+                    <li><a href="blog.html">مدونة الجمال</a></li>
+                    <li><a href="contact.html">خدمة العملاء</a></li>
+                </ul>
+            </nav>
+            
+            <div class="user-actions">
+                <a href="#" id="login-btn"><i class="far fa-user"></i></a>
+                <a href="#" id="cart-btn"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- البانر الرئيسي -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>اكتشفي سحر الأنوثة بأحدث منتجات التجميل!</h2>
+            <p>أجمل العطور وأرقى مستحضرات التجميل في مكان واحد</p>
+            <a href="shop.html" class="btn">تسوقي الآن</a>
+        </div>
+    </section>
+
+    <!-- الأقسام الرئيسية -->
+    <main class="container">
+        <!-- عروض حصرية -->
+        <section class="hot-deals">
+            <h2 class="section-title">عروض حصرية <span class="timer" data-end="2023-12-31">تنتهي قريبًا!</span></h2>
+            <div class="deals-carousel" id="deals-carousel">
+                <!-- سيتم ملؤها بالمنتجات عبر JavaScript -->
+            </div>
+        </section>
+
+        <!-- أحدث المنتجات -->
+        <section class="new-arrivals">
+            <h2 class="section-title">أحدث المنتجات</h2>
+            <div class="products-grid" id="new-arrivals">
+                <!-- سيتم ملؤها بالمنتجات عبر JavaScript -->
+            </div>
+        </section>
+
+        <!-- الأكثر مبيعًا -->
+        <section class="best-sellers">
+            <h2 class="section-title">الأكثر مبيعًا</h2>
+            <div class="products-grid" id="best-sellers">
+                <!-- سيتم ملؤها بالمنتجات عبر JavaScript -->
+            </div>
+        </section>
+
+        <!-- اختياراتك الشخصية -->
+        <section class="for-you">
+            <h2 class="section-title">اختياراتنا لكِ</h2>
+            <div class="products-grid" id="for-you">
+                <!-- سيتم ملؤها بالمنتجات عبر JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h3>سحر الأنوثة</h3>
+                <p>وجهتك الأولى لكل ما يخص الجمال والأناقة</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="#">سياسة الخصوصية</a></li>
+                    <li><a href="#">الشحن والتوصيل</a></li>
+                    <li><a href="#">سياسة الاسترجاع</a></li>
+                    <li><a href="#">الأسئلة الشائعة</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>اشتركي في نشرتنا</h3>
+                <p>احصلي على خصم 10% على أول طلبية لكِ</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="بريدكِ الإلكتروني">
+                    <button type="submit">اشتراك</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 سحر الأنوثة. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- سكربتات JavaScript -->
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
