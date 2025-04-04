@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة المنتج - سحر الأنوثة</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- الهيدر -->
+    <header class="header">
+        <!-- نفس الهيدر في index.html -->
+    </header>
+
+    <!-- مسار التنقل -->
+    <section class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="shop.html">المتجر</a></li>
+                <li><a href="#" id="product-category">العطور</a></li>
+                <li id="product-name">اسم المنتج</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- تفاصيل المنتج -->
+    <section class="product-details">
+        <div class="container">
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img src="" alt="" id="main-product-image">
+                </div>
+                <div class="thumbnail-images">
+                    <!-- سيتم ملؤها عبر JavaScript -->
+                </div>
+            </div>
+            
+            <div class="product-info">
+                <h1 id="product-title">اسم المنتج</h1>
+                <div class="product-meta">
+                    <span class="brand" id="product-brand">العلامة التجارية</span>
+                    <span class="sku">كود المنتج: <span id="product-id">12345</span></span>
+                    <div class="rating" id="product-rating">
+                        <!-- سيتم ملؤها عبر JavaScript -->
+                    </div>
+                </div>
+                
+                <div class="price-box" id="product-price">
+                    <!-- سيتم ملؤها عبر JavaScript -->
+                </div>
+                
+                <div class="product-description">
+                    <p id="product-description">وصف المنتج سيظهر هنا...</p>
+                </div>
+                
+                <div class="product-actions">
+                    <div class="quantity">
+                        <button class="qty-minus"><i class="fas fa-minus"></i></button>
+                        <input type="number" value="1" min="1" id="product-qty">
+                        <button class="qty-plus"><i class="fas fa-plus"></i></button>
+                    </div>
+                    
+                    <button class="add-to-cart" id="add-to-cart-btn">أضف إلى السلة</button>
+                    
+                    <div class="wishlist">
+                        <button id="wishlist-btn"><i class="far fa-heart"></i> حفظ في المفضلة</button>
+                    </div>
+                </div>
+                
+                <div class="product-meta-footer">
+                    <div class="meta-item">
+                        <i class="fas fa-truck"></i>
+                        <span>شحن سريع خلال 2-3 أيام عمل</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-undo"></i>
+                        <span>إرجاع مجاني خلال 14 يوم</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>ضمان أصالة المنتج</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- تفاصيل إضافية -->
+    <section class="product-tabs">
+        <div class="container">
+            <div class="tabs-header">
+                <button class="tab-btn active" data-tab="description">الوصف</button>
+                <button class="tab-btn" data-tab="reviews">التقييمات (5)</button>
+                <button class="tab-btn" data-tab="shipping">الشحن والإرجاع</button>
+            </div>
+            
+            <div class="tabs-content">
+                <div class="tab-panel active" id="description-panel">
+                    <h3>تفاصيل المنتج</h3>
+                    <p id="full-description">الوصف الكامل للمنتج سيظهر هنا...</p>
+                    
+                    <h3>مميزات المنتج</h3>
+                    <ul id="product-features">
+                        <!-- سيتم ملؤها عبر JavaScript -->
+                    </ul>
+                </div>
+                
+                <div class="tab-panel" id="reviews-panel">
+                    <div class="reviews-summary">
+                        <div class="average-rating">
+                            <span class="avg">4.8</span>
+                            <span class="out-of">/5</span>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="total-reviews">بناءً على 24 تقييم</span>
+                        </div>
+                        
+                        <div class="rating-bars">
+                            <!-- سيتم ملؤها عبر JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="customer-reviews">
+                        <!-- سيتم ملؤها عبر JavaScript -->
+                    </div>
+                    
+                    <div class="add-review">
+                        <h3>أضف تقييمك</h3>
+                        <form id="review-form">
+                            <div class="form-group">
+                                <label for="review-rating">تقييمك</label>
+                                <div class="rating-input">
+                                    <input type="radio" id="star5" name="rating" value="5">
+                                    <label for="star5"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="star4" name="rating" value="4">
+                                    <label for="star4"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="star3" name="rating" value="3">
+                                    <label for="star3"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="star2" name="rating" value="2">
+                                    <label for="star2"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="star1" name="rating" value="1">
+                                    <label for="star1"><i class="fas fa-star"></i></label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="review-name">اسمك</label>
+                                <input type="text" id="review-name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="review-text">تقييمك</label>
+                                <textarea id="review-text" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-review">إرسال التقييم</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="tab-panel" id="shipping-panel">
+                    <h3>سياسة الشحن</h3>
+                    <p>نقدم شحنًا سريعًا لجميع أنحاء المملكة خلال 2-3 أيام عمل. الشحن مجاني للطلبات فوق 200 ر.س.</p>
+                    
+                    <h3>سياسة الإرجاع</h3>
+                    <p>يمكنك إرجاع المنتج خلال 14 يوم من استلامه بشرط أن يكون بحالته الأصلية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- منتجات مقترحة -->
+    <section class="related-products">
+        <div class="container">
+            <h2 class="section-title">قد يعجبك أيضًا</h2>
+            <div class="products-grid" id="related-products">
+                <!-- سيتم ملؤها عبر JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <!-- نفس الفوتر في index.html -->
+    </footer>
+
+    <!-- سكربتات JavaScript -->
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/product.js"></script>
+</body>
+</html>

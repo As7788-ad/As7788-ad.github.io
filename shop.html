@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المتجر - سحر الأنوثة</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- الهيدر -->
+    <header class="header">
+        <!-- نفس الهيدر في index.html -->
+    </header>
+
+    <!-- فلترة المنتجات -->
+    <section class="shop-filters">
+        <div class="container">
+            <div class="filter-sidebar">
+                <div class="filter-group">
+                    <h3>التصنيفات</h3>
+                    <ul class="category-list">
+                        <!-- سيتم ملؤها عبر JavaScript -->
+                    </ul>
+                </div>
+                
+                <div class="filter-group">
+                    <h3>العلامة التجارية</h3>
+                    <ul class="brand-list">
+                        <!-- سيتم ملؤها عبر JavaScript -->
+                    </ul>
+                </div>
+                
+                <div class="filter-group">
+                    <h3>السعر</h3>
+                    <div class="price-range">
+                        <input type="range" id="price-range" min="0" max="1000" value="1000">
+                        <div class="price-values">
+                            <span>0 ر.س</span>
+                            <span id="max-price">1000 ر.س</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h3>التقييمات</h3>
+                    <div class="rating-filter">
+                        <div class="rating-option">
+                            <input type="checkbox" id="rating-5" value="5">
+                            <label for="rating-5">
+                                <span class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span>5 نجوم</span>
+                            </label>
+                        </div>
+                        <!-- خيارات التقييم الأخرى -->
+                    </div>
+                </div>
+                
+                <button class="apply-filters">تطبيق الفلترة</button>
+                <button class="reset-filters">إعادة تعيين</button>
+            </div>
+            
+            <div class="products-section">
+                <div class="shop-header">
+                    <h2>جميع المنتجات</h2>
+                    <div class="sort-options">
+                        <select id="sort-by">
+                            <option value="default">ترتيب حسب</option>
+                            <option value="price-low">السعر: من الأقل للأعلى</option>
+                            <option value="price-high">السعر: من الأعلى للأقل</option>
+                            <option value="popular">الأكثر شعبية</option>
+                            <option value="newest">الأحدث</option>
+                            <option value="rating">أعلى التقييمات</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="products-grid" id="all-products">
+                    <!-- سيتم ملؤها بالمنتجات عبر JavaScript -->
+                </div>
+                
+                <div class="pagination">
+                    <button class="prev-page"><i class="fas fa-chevron-right"></i> السابق</button>
+                    <div class="page-numbers">
+                        <span class="active">1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                    </div>
+                    <button class="next-page">التالي <i class="fas fa-chevron-left"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <!-- نفس الفوتر في index.html -->
+    </footer>
+
+    <!-- سكربتات JavaScript -->
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/shop.js"></script>
+</body>
+</html>

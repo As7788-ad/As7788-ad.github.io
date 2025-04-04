@@ -1,0 +1,51 @@
+/* تكيف السلايدر */
+@media (max-width: 1024px) {
+    .hero-slider {
+        height: 50vh;
+    }
+    
+    .slide-content h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-slider {
+        height: 40vh;
+    }
+    
+    .slide-content {
+        padding: 20px;
+    }
+    
+    .slide-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .offer-container {
+        flex-direction: column;
+    }
+    
+    .offer-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-slider {
+        height: 30vh;
+    }
+    
+    .slide-content {
+        display: none;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .product-image {
+        height: 200px;
+    }
+}

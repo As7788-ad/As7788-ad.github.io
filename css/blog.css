@@ -1,0 +1,164 @@
+/* تنسيقات عامة */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* الهيدر */
+.header {
+    background-color: #e91e63;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* بانر المدونة */
+.blog-banner {
+    background: linear-gradient(to right, #e91e63, #f06292);
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.blog-banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.blog-banner p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* مقالات المدونة */
+.blog-posts {
+    margin-bottom: 50px;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.blog-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.blog-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover .blog-image img {
+    transform: scale(1.05);
+}
+
+.blog-content {
+    padding: 15px;
+}
+
+.blog-meta {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.blog-meta .category {
+    color: #e91e63;
+    font-weight: bold;
+}
+
+.blog-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.blog-excerpt {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    color: #e91e63;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #c2185b;
+}
+
+/* الترقيم (Pagination) */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination button,
+.pagination .page-numbers span {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination button:hover,
+.pagination .page-numbers span:hover {
+    background-color: #e91e63;
+    color: #fff;
+}
+
+.pagination .page-numbers .active {
+    background-color: #e91e63;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* الفوتر */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
